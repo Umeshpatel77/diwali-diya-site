@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✨ Diwali Decor & Diyas ✨</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <canvas id="animated-bg"></canvas>
+
+</head>
+
+<body>
+  <header>
+    <h1>🪔 Diwali Decoration & Diyas</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="banner">
+    <div class="overlay">
+      <h2>Light up your Diwali with Beautiful Diyas</h2>
+      <p>Exclusive handmade Diwali decor & designer diyas for your home.</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Featured Products</h2>
+    <div class="product-grid">
+      <!-- <div class="card">
+        <img src="./photos/handi1.jpg" alt="Brass Diya" />
+        <h3>Golden Brass Diya</h3>
+        <p>₹150</p>
+      </div> -->
+      <div class="card">
+        <img src="./photos/diya.jpg" alt="Decorative Diyas" />
+        <h3>Decorative Diyas (Set of 6)</h3>
+        <p>₹180</p>
+      </div>
+      <div class="card">
+        <img src="./photos/handi.jpg" alt="Colorful Diya" />
+        <h3>Colorful Clay Diyas</h3>
+        <p>₹120</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔥 New Handi Carousel Section -->
+  <section id="handi-gallery" class="handi-gallery">
+    <h2>✨ Handcrafted Handi Collection ✨</h2>
+    <div class="carousel">
+      <button class="prev"><i class="fas fa-chevron-left"></i></button>
+      <img id="handiImage" src="./photos/handi1.jpg" alt="Handi" />
+      <button class="next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- 🎥 Video Showcase Section -->
+  <section class="video-section">
+    <h2>✨ Watch Our Diwali Decor in Action ✨</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="./videos/decor1.mp4" type="video/mp4" />
+      </video>
+      <video controls>
+        <source src="./videos/decor2.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact / Order Enquiry</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message / Order Details" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- 🌟 Premium Social Icons -->
+   
+
+    <div class="social-links">
+  <a href="https://wa.me/9673041370" target="_blank" class="social-icon whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://instagram.com/your_instagram_username" target="_blank" class="social-icon instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+    <p id="successMsg"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Diwali Decor | Made with ❤️ for the Festival of Lights</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff8e1;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 { font-size: 1.3rem; }
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe082;
+  transform: scale(1.1);
+}
+
+.banner {
+  /* background: url('./photos/handi4.jpg') center/cover no-repeat; */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.banner .overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.banner h2 {
+  font-size: 2rem;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ffc107, 0 0 20px #ff9800; }
+  to { text-shadow: 0 0 20px #ffeb3b, 0 0 30px #ff5722; }
+}
+
+.btn {
+  background: #ff9800;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff5722;
+  transform: scale(1.05);
+}
+
+/* Handi Product Cards */
+.products {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #fff8e1, #ffe0b2);
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff3e0;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  transition: all 0.4s ease;
+  animation: float 3s infinite ease-in-out alternate;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.07) rotate(1deg);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-8px); }
+}
+
+/* Video Section */
+
+/* .videos {
+  background: #fff3e0;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+} */
+
+
+
+
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 360px; /* tu chahe to 400px ya 500px kar sakta hai */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  object-fit: cover; /* important line */
+}
+
+
+.video-box {
+  background: #000;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s;
+}
+
+.video-box:hover {
+  transform: scale(1.05);
+}
+
+video {
+  width: 320px;
+  border-radius: 15px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  background: #ffe0b2;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+footer {
+  background: #ff9800;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* 🔥 Handi Carousel */
+.handi-gallery {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff7e6;
+}
+
+.handi-gallery h2 {
+  color: #ff5722;
+  margin-bottom: 25px;
+}
+
+.carousel {
+  position: relative;
+  display: inline-block;
+}
+
+.carousel img {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s ease;
+}
+
+.carousel button {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 12px 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.carousel button:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+  left: -60px;
+}
+
+.next {
+  right: -60px;
+}
+
+/* 🎥 Video Section */
+.video-section {
+  background: #fff3e0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.video-section h2 {
+  color: #ff5722;
+  margin-bottom: 30px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.video-container video {
+  width: 340px;
+  height: 220px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* 🌟 Premium Social Icons */
+.premium {
+  background: linear-gradient(135deg, #ff7b00, #ff4500);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 10px rgba(255, 94, 0, 0.6);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 140, 0, 0.9);
+  }
+}
+
+
+
+/*New updations start to here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  background: #d6b288; /* Dark background for premium feel */
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #ff6f61, #de1f87);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-icon i {
+  position: relative;
+  z-index: 2;
+}
+
+.social-icon::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255,255,255,0.1);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.social-icon:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.social-icon.whatsapp {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+.social-icon.instagram {
+  background: radial-gradient(circle at 30% 30%, #fdf497, #fd5949, #d6249f, #285AEB);
+}
+
+.social-icon:hover {
+  transform: scale(1.2) rotate(-10deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+
+
+/* 🌌 Animated Background Canvas */
+#animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at center, #ffecd2, #fcb69f);
+}
